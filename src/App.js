@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
+import LogIn from "./components/logIn";
+import { setClientToken } from "./components/spotifyApi";
+// import clientApi from "./components/spotifyApi";
+import Sidebar from "./components/sidebar";
+import Library from "./screens/library"
+import Feed from "./screens/feed"
+import Trending from "./screens/trending"
+import Player from "./screens/player"
+import Favourites from "./screens/favourites"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [spotifyToken, setSpotifyToken] = useState("");
+
+  useEffect(() => {
+    const _token = window.localStorage.getItem("token");
+    const hash = window.location.hash;
+    window.location.hash = "";
+    if (!_token && hash) {
+      const accessToken = hash.split("&")[0].split("=")[1];
+      console.log(accessToken);
+      window.localStorage.setItem("token", accessToken);
+      // console.log(hash)
+      setSpotifyToken(accessToken);
+      setClientToken(accessToken);
+    } else {
+      setSpotifyToken(_token);
+      setClientToken(_token);
+    }
+  }, []);
+
+  console.log(spotifyToken);
+
+  return !spotifyToken ? (
+    <LogIn />
+  ) : (
+    <Router>
+      <div className="main-screen">
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={<Library />} />
+        <Route path="/feed" element={<Feed />} />
+        <Route path="/trending" element={<Trending />} />
+        <Route path="/player" element={<Player />} />
+        <Route path="/favourites" element={<Favourites />} />
+      </Routes>
+      </div>
+      
+    </Router>
   );
 }
 

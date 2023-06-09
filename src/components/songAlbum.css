@@ -1,0 +1,49 @@
+.album-card{
+    background: rgb(203,202,214);
+    background: linear-gradient(-180deg, rgba(203,202,214,1) 0%, rgba(239,242,240,1) 53%, rgba(239,242,252,1) 100%);
+    width: 100%;
+    /* height: 70%; */
+    border-radius: 10px;
+    padding: .9em;
+    margin: auto;        
+    transition: all 0.2s ease;
+    cursor: pointer;    
+    overflow: auto;
+    /* height: 100%; */
+}
+.album-card::-webkit-scrollbar {
+  display: none;
+}
+.library-img{
+    aspect-ratio: 1;
+    /* height: 50%; */
+    /* margin: auto; */
+    border-radius: 30px;
+    /* margin-bottom: .3em; */
+    overflow: hidden;
+}
+.album-title{
+    font-weight:600;
+    font-size: 16px;
+    white-space: nowrap;
+    display: inline-block;
+    animation: album-title 12s linear infinite;
+    padding-left: 40%;
+  }
+  
+  @keyframes album-title {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+    
+    
+}
+
+.album-track-title, .album-date-title{
+    font-size: 12px;
+    margin-top: .5em;
+}
+

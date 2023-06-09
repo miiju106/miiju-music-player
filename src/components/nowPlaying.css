@@ -1,0 +1,7 @@
+.play-duration{
+    display:flex;
+    justify-content: space-between;
+}
+.now-play-cont{
+    margin-top: .8em;
+}
