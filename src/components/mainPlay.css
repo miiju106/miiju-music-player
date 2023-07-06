@@ -1,5 +1,8 @@
 .main-play{
     /* flex:3; */
-    width: 80%;
+    width: 77%;
     /* background-color: yellow; */
+}
+.text{
+    width:100%;
 }

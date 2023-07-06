@@ -16,7 +16,7 @@
     background: rgb(203,202,214);
     background: linear-gradient(-180deg, rgba(203,202,214,1) 0%, rgba(239,242,240,1) 53%, rgba(239,242,252,1) 100%);
     width: 17%;
-    height: 39%;
+    max-height: 39%;
     border-radius: 10px;
     padding: .8em;
     /* margin: auto; */

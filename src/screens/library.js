@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const Library = () => {
   const [playlist, setPlaylist] = useState(null);
+  const [allTracks, setAllTracks] = useState(null)
   // const [orderedPlaylist, setOrderedPlaylist] = useState(null);
 
   // This is the logic to arrange the playlists alphabetically;
@@ -23,6 +24,18 @@ const Library = () => {
     return 0;
   });
 
+  // const theIds = [] 
+  //  playlist?.forEach((playlists, index)=>{
+  //   // console.log(playlists.id)
+  //    theIds?.push(playlists.id)
+    
+  //   })
+    
+    
+  //   const playlistId = theIds.join(',')
+  //   console.log(playlistId)
+
+
   useEffect(() => {
     clientApi
       .get("me/playlists")
@@ -36,14 +49,18 @@ const Library = () => {
       });
   }, []);
 
+  
+
+
   console.log(playlist);
+   
   // console.log(playlist.id);
   // console.log(sortPlayLists)
 
   const navigate = useNavigate();
 
   const playPlaylist = (idName, songName) => {
-    navigate("/player", { state: { id: idName, song: songName } });
+    navigate(`/player/${songName}`, { state: { id: idName, song: songName } });
   };
 
   return (

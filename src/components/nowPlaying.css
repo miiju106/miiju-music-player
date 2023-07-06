@@ -1,7 +1,42 @@
 .play-duration{
     display:flex;
     justify-content: space-between;
-}
+    }
 .now-play-cont{
     margin-top: .8em;
 }
+.input-cont{
+    -webkit-appearance: none;
+    appearance: none;
+    width:100%;
+    height:10px;
+    outline:none;
+    background-color: #ddd;
+    
+}
+.input-cont::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Hides the default appearance */
+    appearance: none;
+    margin-top: -3px;
+    width: 17px; /* Set the width of the thumb */
+    height: 17px; /* Set the height of the thumb */
+    border-radius: 60%; /* Rounded corners */
+    background-color: #0B163D; 
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+.input-cont::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+     width: 2px;  
+     height: 8px;  
+     /* background-color: #ccc; */
+     /* border-radius: 20%;  */
+    /* background: #0B163D; */
+    /* border-radius: 50%;  */
+    /* background-color: #0B163D; Background color of the thumb for Firefox */
+    cursor: pointer; /* Add a pointer cursor on hover for Firefox */
+  }
+  .input-cont::-webkit-range-progress {
+    background: #3d1b1b;
+}
+ 

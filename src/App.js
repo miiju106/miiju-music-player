@@ -8,6 +8,7 @@ import Library from "./screens/library"
 import Feed from "./screens/feed"
 import Trending from "./screens/trending"
 import Player from "./screens/player"
+import MainPlayer from "./screens/mainPlayer"
 import Favourites from "./screens/favourites"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -43,7 +44,8 @@ function App() {
         <Route path="/" element={<Library />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/trending" element={<Trending />} />
-        <Route path="/player" element={<Player />} />
+        <Route path="/player" element={<MainPlayer />} />
+        <Route path="/player/:id" element={<Player />} />
         <Route path="/favourites" element={<Favourites />} />
       </Routes>
       </div>

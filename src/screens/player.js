@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react"
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import "./player.css";
 import SongAlbum from "../components/songAlbum";
 import SongQueue from "../components/songQueue";
@@ -14,6 +14,11 @@ const Player = () => {
   console.log(location.state.id);
   const mySong = location.state.song;
   console.log(location.state.song);
+
+  const params = useParams();
+
+  console.log(params)
+
 
   const [tracks, setTracks] = useState([]);
   const [currentTrack, setCurrentTrack] = useState({});
@@ -49,7 +54,7 @@ console.log(currentIndex)
   return (
     <div className="player-screen">
       <div className="player-firstdiv" >
-        <MainPlay />
+        <MainPlay tracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex}/>
         <div className="player-seconddiv">
           <SongAlbum album={currentTrack?.album}/>
           <SongQueue tracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex}/>
@@ -58,7 +63,7 @@ console.log(currentIndex)
       {/* <h2>
         Welcome to <span className="mySong-name">{mySong}</span> lists
       </h2> */}
-      <NowPlaying currentTrack={currentTrack} />
+      <NowPlaying currentTrack={currentTrack} tracks={tracks} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
     </div>
   );
 };

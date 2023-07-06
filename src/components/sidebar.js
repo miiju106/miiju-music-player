@@ -28,23 +28,24 @@ const Sidebar = () => {
         alt=""
       />
       <div>
+      <SideBarButton
+          title="Library"
+          to="/"
+          icon={<LibraryMusicIcon />}
+        />
         <SideBarButton title="Feed" to="/feed" icon={<DashboardIcon />} />
         <SideBarButton
           title="Trending"
           to="/trending"
           icon={<WhatshotIcon />}
         />
-        <SideBarButton title="Player" to="/player" icon={<PlayArrowIcon />} />
+        <SideBarButton title="Player" to="/player"  icon={<PlayArrowIcon />} />
         <SideBarButton
           title="Favourites"
           to="/favourites"
           icon={<FavoriteIcon />}
         />
-        <SideBarButton
-          title="Library"
-          to="/library"
-          icon={<LibraryMusicIcon />}
-        />
+        
       </div>
 
       </div>

@@ -27,8 +27,8 @@
 }
 
 .control-img{
-    width:40%;
-    height:50%;
+    max-width:40%;
+    max-height:50%;
     object-fit: contain;
     aspect-ratio: 1;
     border-radius: 15px;
@@ -57,3 +57,17 @@
     /* font-weight:600; */
 }
 
+ .vol-cont{
+    display:flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    width:15%;
+    /* background-color: yellow; */
+}
+.vol-down, .vol-up{
+    color:#207698;
+}
+.vol-bar{
+    cursor: pointer;
+    width:100%;
+}
