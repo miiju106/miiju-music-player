@@ -16,6 +16,7 @@ const MainPlayer = () => {
 
   
   // This is the logic to arrange the playlists alphabetically;
+  
   mainPlaylist?.sort((a, b) => {
     let fa = a.name.toLowerCase();
     let fb = b.name.toLowerCase();
@@ -58,7 +59,7 @@ const MainPlayer = () => {
       .catch((err) => {
         console.log(err.message);
       });
-  }, [playlistIndex,]);
+  }, [playlistIndex]);
 
 
   // useEffect(()=>{
@@ -100,6 +101,13 @@ const MainPlayer = () => {
         setPlaylistIndex={setPlaylistIndex}
         />
       )}
+      <div className="playlist-head">
+        <p className="first-head">TITLE</p>
+
+        <p className="second-head">ALBUM</p>
+        <p className="third-head">DATE RELEASE</p>
+        <p>TIME</p>
+      </div>
       <MainPlaylistTrack
         playlistTracks={playlistTracks}
         mainPlaylist={mainPlaylist}

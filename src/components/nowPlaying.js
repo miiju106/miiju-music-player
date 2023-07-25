@@ -8,8 +8,10 @@ const NowPlaying = ({
   tracks,
   currentIndex,
   setCurrentIndex,
+  isPlaying,
+  setIsPlaying
 }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  
   const [trackProgress, setTrackProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
   const [playback, setPlayback] = useState(0);

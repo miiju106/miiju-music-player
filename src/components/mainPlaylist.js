@@ -31,7 +31,7 @@ const MainPlaylist = ({mainPlaylist, currentMainPlaylist, playlistIndex, setPlay
     <div className='mainPlay-div'>
 
       <div className='main-Play-subdiv'>
-        {/* <img src={currentMainPlaylist?.images[0].url} alt="playlist-img" className="mainPlay-img" /> */}
+        <img src={currentMainPlaylist?.images && currentMainPlaylist?.images[0].url} alt="playlist-img" className="mainPlay-img" />
         <div className='mainPlay-subdiv'>
         <p>PLAYLIST</p>
           <h2>{currentMainPlaylist?.name}</h2>

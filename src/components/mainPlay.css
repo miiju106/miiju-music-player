@@ -6,3 +6,15 @@
 .text{
     width:100%;
 }
+.third-div{
+width: 3.6%;
+}
+.btn-fav.active{
+    color:rgba(244, 187, 146,1);
+}
+.btn-fav{
+    color:#646464;
+}
+.playlist-body.active{
+    background-color:rgba(244, 187, 146,1) ;
+}

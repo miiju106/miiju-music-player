@@ -1,20 +1,21 @@
 import React from 'react'
 import "./songQueue.css"
 
-const SongQueue = ({tracks, setCurrentIndex, currentIndex}) => {
+const SongQueue = ({tracks, setCurrentIndex, currentIndex, cart}) => {
+  console.log(cart)
 
-  console.log(tracks)
-  console.log(currentIndex)
+  // console.log(tracks)
+  // console.log(currentIndex)
   return (
     <div className='track-list-card'>
-      <p>Up Next</p>
+      <p>Favourites</p>
       <div >
-        {tracks?.map((track, index)=>(
-          <div key={track.track.id} className="track-list-item" onClick={()=>setCurrentIndex(index)}>
+        {cart?.map((track, index)=>(
+          <div key={track.id} className="track-list-item" onClick={()=>setCurrentIndex(index)}>
             {console.log(track)}
             {/* {console.log(track.track.id)} */}
             {/* {console.log(index)} */}
-            <p className='track-list-name'>{track.track.name}</p>
+            <p className='track-list-name'>{track.name}</p>
             <p className='track-list-duration'>0:30</p>
           </div>
         ))}

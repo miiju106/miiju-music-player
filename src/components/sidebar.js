@@ -12,7 +12,9 @@ import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 
 const Sidebar = () => {
   useEffect(() => {
-    clientApi.get("me").then((resp) => {
+    clientApi
+      .get("me")
+      .then((resp) => {
         console.log(resp);
       })
       .catch((err) => {
@@ -23,33 +25,26 @@ const Sidebar = () => {
   return (
     <div className="sidebar-div">
       <div className="sidebar-subdiv">
-      <img
-        src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt=""
-      />
-      <div>
-      <SideBarButton
-          title="Library"
-          to="/"
-          icon={<LibraryMusicIcon />}
+        <img
+          src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
         />
-        <SideBarButton title="Feed" to="/feed" icon={<DashboardIcon />} />
-        <SideBarButton
-          title="Trending"
-          to="/trending"
-          icon={<WhatshotIcon />}
-        />
-        <SideBarButton title="Player" to="/player"  icon={<PlayArrowIcon />} />
-        <SideBarButton
+        <div>
+          <SideBarButton title="Library" to="/" icon={<LibraryMusicIcon />} />
+          {/* <SideBarButton title="Feed" to="/feed" icon={<DashboardIcon />} /> */}
+          <SideBarButton
+            title="Trending"
+            to="/trending"
+            icon={<WhatshotIcon />}
+          />
+          <SideBarButton title="Player" to="/player" icon={<PlayArrowIcon />} />
+          {/* <SideBarButton
           title="Favourites"
           to="/favourites"
           icon={<FavoriteIcon />}
-        />
-        
+        /> */}
+        </div>
       </div>
-
-      </div>
-      
     </div>
   );
 };

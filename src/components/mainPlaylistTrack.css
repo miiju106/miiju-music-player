@@ -5,14 +5,42 @@
     padding: 1em 0;
     margin-bottom: .3em;
     
+    
 }
+
 .playlist-head > p{
     padding:0 .7em;
     /* margin-bottom: .3em; */
 }
+
 .first-head{
-    flex:0.3;
+    flex:0.31;
 }
+.second-head{
+    width:14%;
+    /* background-color: blue; */
+    /* margin-right: 2em; */
+}
+.third-head{
+    width:7.5%;
+    /* padding-right:1em; */
+    /* background-color: blue; */
+}
+.firstDiv-name{
+    width: 16%;
+    display:flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+.secondDiv-name{
+    /* background-color: blue; */
+    width: 8.7%;
+}
+.thirdDiv-name{
+    /* background-color: blue; */
+    width: 2.8%;
+}
+
 .title-img{
     width:100%;
     /* height:25%; */
@@ -33,7 +61,7 @@
     display: flex;
     align-items: center;
     /* background-color: blue; */
-    flex: 0.3;
+    flex: 0.35;
     /* margin-bottom: .7em; */
     
     
@@ -55,7 +83,7 @@
     /* margin-top: .2em; */
     padding: .4em .7em;
     cursor: pointer;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: 20%;
     
 }
@@ -92,6 +120,13 @@
     overflow-y: scroll;
     height: 20%;
 } */
-.playlist-body::-webkit-scrollbar {
+.playlist-main::-webkit-scrollbar {
     display: none;
   }
+  .playlist-main{
+    overflow-y: scroll;
+  }
+  /* .playlist-body > div{
+    background-color: blue;
+   
+  } */

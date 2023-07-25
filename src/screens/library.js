@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import "./library.css";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import { useNavigate } from "react-router-dom";
+import Search from "../components/search";
 
 const Library = () => {
   const [playlist, setPlaylist] = useState(null);
@@ -65,6 +66,8 @@ const Library = () => {
 
   return (
     <div className="inner-screen">
+      <Search/>
+      
       {playlist?.map((playlists) => (
         <div
           className="library-card"

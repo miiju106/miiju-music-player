@@ -11,7 +11,7 @@ const LogIn = () => {
         className="logo-img"
       />
       <a href={loginEndpoint}>
-        <div className="login-btn">LOGIN</div>
+        <div className="login-btn">CONNECT</div>
       </a>
     </div>
   );
