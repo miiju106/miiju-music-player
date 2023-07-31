@@ -29,15 +29,17 @@ const Sidebar = () => {
           src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
         />
-        <div>
-          <SideBarButton title="Library" to="/" icon={<LibraryMusicIcon />} />
+        <div className="sidebar-navIcons">
+          <SideBarButton title="Library" to="/" icon={<LibraryMusicIcon />} className="side-bar"/>
           {/* <SideBarButton title="Feed" to="/feed" icon={<DashboardIcon />} /> */}
+          
+          <SideBarButton title="Player" to="/player" icon={<PlayArrowIcon />} className="side-bar" />
           <SideBarButton
             title="Trending"
             to="/trending"
             icon={<WhatshotIcon />}
+            className="side-bar"
           />
-          <SideBarButton title="Player" to="/player" icon={<PlayArrowIcon />} />
           {/* <SideBarButton
           title="Favourites"
           to="/favourites"

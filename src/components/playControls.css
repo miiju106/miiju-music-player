@@ -1,3 +1,43 @@
+@media screen and (max-width: 428px) {
+  
+    .play-pause-icon{
+     font-size: 52px !important;
+    }
+    .prev-icon, .next-icon{
+        font-size: 40px !important;
+    }
+    .vol-down, .vol-up{
+        font-size: 18px !important;
+    }
+    .vol-cont{
+        width:20% !important;
+    }
+    .vol-cont{
+        align-items: center;
+    }
+    .play-control-icons{
+        width:30% !important;
+        /* background-color: #0B163D; */
+    }
+    .control-name-detail{
+        width: 100% !important;
+        /* background-color: #0B163D; */
+    }
+    .play-control-name{
+        width: 20% !important;
+    }
+    .control-song-title{
+        font-size: 12px !important;
+    }
+    .control-img{
+        border-radius: 5px !important;
+    }
+    .control-artist-title{
+        font-size: 10px !important;
+    }
+
+  }
+
 .play-control-cont{
     display: flex;
     justify-content: space-between;

@@ -1,20 +1,39 @@
-.main-play{
-    /* flex:3; */
-    width: 77%;
-    /* background-color: yellow; */
+@media screen and (max-width: 428px) {
+  .main-play {
+    width: 100% !important;
+    /* overflow-y: hidden !important; */
+    /* height:70vh !important;  */
+  }
+  .track-name {
+    font-size: 10px !important;
+  }
+  .title-img {
+    border-radius: 5px !important;
+  }
+  .fav-icon{
+    font-size: 16px !important;
+  }
+  .search-text{
+    margin-bottom: .8em !important;
+  }
 }
-.text{
-    width:100%;
+.main-play {
+  /* flex:3; */
+  width: 77%;
+  /* background-color: yellow; */
 }
-.third-div{
-width: 3.6%;
+.text {
+  width: 100%;
 }
-.btn-fav.active{
-    color:rgba(244, 187, 146,1);
+.third-div {
+  width: 3.6%;
 }
-.btn-fav{
-    color:#646464;
+.btn-fav.active {
+  color: #26223e;
 }
-.playlist-body.active{
-    background-color:rgba(244, 187, 146,1) ;
+.btn-fav {
+  color: #646464;
+}
+.playlist-body.active {
+  background-color: rgba(244, 187, 146, 1);
 }

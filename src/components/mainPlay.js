@@ -14,25 +14,18 @@ const MainPlay = ({
   currentIndex,
   setCurrentIndex,
   currentTrack,
+  setCurrentTrack,
   isPlaying,
   setIsPlaying,
   cart,
   setCart
 }) => {
   
-  const [playActive, setPlayActive] = useState(0);
+  const [wordFiltered, setWordFiltered] = useState([]);
 
-  const location = useLocation();
+ 
 
-  // const whenPlayed = isPlaying ? "playlist-body active" : "playlist-body";
-
-  // const [present, setPresent] = useState(false)
-
-  // let present = false;
-
-  // const clickfavourite = playActive ? "btn-fav active" : "btn-fav"
-
-  // const[allTracks, setAllTracks] = useState(null)
+  
 
   // const id = tracks?.forEach((track, index)=>{
   //   console.log(track.track.id)
@@ -57,36 +50,8 @@ const MainPlay = ({
 
   //    };
 
-  // const handleClick = (item) => {
-
-  //   const arr = cart.find((product) => item.id == product.id)
-
-  //   if (!arr) {
-  //     setCart([...cart, item]);
-  //   }
-
-  //    };
-
-  //   const handleClick = (item) =>{
-
-  //     const checkItemIndex = cart?.map((product, index)=>{
-  //       if(item.id === product.id){
-  //         return index;
-  //       }
-  //        return;
-  //     })
-  //     console.log(checkItemIndex)
-  //   if(checkItemIndex){
-  //     const newCart = cart?.pop(checkItemIndex)
-  //     setCart(cart=> {
-  //       cart.splice(checkItemIndex, 1)
-  //       // return cart;
-  //       })
-  //  }else{
-  //   setCart([...cart, item])
-  //  }
-
-  //   }
+  
+  
 
   const handleClick = (item) => {
     const checkItemIndex = (cart, item) => {
@@ -113,7 +78,7 @@ const MainPlay = ({
       setCart(newCart);
     } else {
       setCart([...cart, item]);
-      // setPlayActive(item.id)
+      
     }
   };
 
@@ -136,9 +101,11 @@ const MainPlay = ({
   });
 
   return (
+
     <div className="main-play">
-      {/* <Search/> */}
-      <div className="playlist-main">
+      <Search wordFiltered={wordFiltered} setWordFiltered={setWordFiltered} searchTracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex} currentTrack={currentTrack} setCurrentTrack={setCurrentTrack}/>
+      {wordFiltered.length == 0 && (
+        <div className="playlist-main">
         <div className="playlist-head">
           <p className="first-head">TITLE</p>
 
@@ -149,7 +116,7 @@ const MainPlay = ({
 
         {tracks?.map((track, index) => (
           <div className="playlist-body">
-            {/* {console.log(currentTrack)} */}
+           
 
             <div className="title-div" onClick={() => setCurrentIndex(index)}>
               <div className="div-img">
@@ -166,13 +133,20 @@ const MainPlay = ({
               <div className="title-play">
                 <PlayCircleIcon style={{ fontSize: "25px" }} />
               </div>
-              {/* className={clickfavourite} */}
+              
             </div>
             <div className="firstDiv-name">
               <p className="track-name">{track.track.album?.name}</p>
-              <div className={cart.includes(track.track) ? "btn-fav active":"btn-fav"} key={track.track.id} onClick={() => handleClick(track.track)}>
-                  <FavoriteIcon />
+              {cart.includes(track.track) ? (
+                <div className= "btn-fav active" key={track.track.id} onClick={() => handleClick(track.track)}>
+                  <FavoriteIcon className="fav-icon"/>
               </div>
+              ):(
+                <div className= "btn-fav" key={track.track.id} onClick={() => handleClick(track.track)}>
+                  <FavoriteBorderIcon className="fav-icon" />
+              </div>
+              )}
+              
             </div>
             <div className="secondDiv-name">
               <p className="track-name">{track.track.album?.release_date}</p>
@@ -183,6 +157,7 @@ const MainPlay = ({
           </div>
         ))}
       </div>
+      )}
     </div>
   );
 };

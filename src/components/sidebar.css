@@ -1,3 +1,36 @@
+
+@media screen and (max-width: 1024px) {
+    .sidebar-div { 
+        width:80px !important;
+    }
+   
+
+}
+@media screen and (max-width: 428px) {
+    .sidebar-div{
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+    .sidebar-subdiv > img{
+        display:none;
+    }
+   
+    .sidebar-div { 
+         width: 100% !important;
+         height: 80px !important;
+    }
+    .sidebar-navIcons{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .side-bar{
+        font-size:12px !important;
+    }
+   
+
+}
 .sidebar-div{
     background-color: #26223E;
     width:100px;

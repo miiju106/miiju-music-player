@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+@media screen and (max-width: 1024px) {
+  .main-screen{
+    /* height:70vh !important; */
+  }
+
+}
+@media screen and (max-width: 428px) {
+  .main-screen{
+   flex-direction:column-reverse;
+  }
+
+}
 *{
   margin:0;
   padding:0;

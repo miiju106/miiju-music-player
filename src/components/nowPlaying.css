@@ -1,3 +1,25 @@
+@media screen and (max-width: 1024px) {
+     .now-play-cont { 
+        /* position:fixed; */
+        /* width:87% !important; */
+        /* bottom: 0 !impnortant; */
+        
+    } 
+   
+
+}
+@media screen and (max-width: 428px) {
+     .now-play-cont { 
+        position: fixed;
+        bottom: 7em;
+        width: 95% !important;
+        z-index: 1;
+        
+    } 
+   
+
+}
+
 .play-duration{
     display:flex;
     justify-content: space-between;

@@ -9,7 +9,8 @@ const SongQueue = ({tracks, setCurrentIndex, currentIndex, cart}) => {
   return (
     <div className='track-list-card'>
       <p>Favourites</p>
-      <div >
+      {cart.length !== 0 ? (
+        <div >
         {cart?.map((track, index)=>(
           <div key={track.id} className="track-list-item" onClick={()=>setCurrentIndex(index)}>
             {console.log(track)}
@@ -20,6 +21,7 @@ const SongQueue = ({tracks, setCurrentIndex, currentIndex, cart}) => {
           </div>
         ))}
       </div>
+      ):(<p className='track-list-name'>No Favourites Added</p>)}
       </div>
   )
 }

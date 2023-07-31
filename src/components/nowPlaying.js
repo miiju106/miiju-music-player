@@ -188,8 +188,7 @@ const NowPlaying = ({
         setTrackProgress={setTrackProgress}
         setPlayback={setPlayback}
         playback={playback}
-        duration = {duration}
-       
+        duration = {duration}      
                 
         
       />

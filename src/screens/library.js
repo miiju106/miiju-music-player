@@ -66,7 +66,7 @@ const Library = () => {
 
   return (
     <div className="inner-screen">
-      <Search/>
+      {/* <Search/> */}
       
       {playlist?.map((playlists) => (
         <div

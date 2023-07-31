@@ -1,9 +1,23 @@
+@media screen and (max-width: 428px) {
+    .library-card {
+      width: 45% !important;
+      overflow-y: auto !important;
+      margin-bottom: .6em !important;
+      /* height:70vh !important;  */
+    }
+    .inner-screen{
+        width: 95% !important;
+    }
+    
+  }
+
+
 .inner-screen{
     width:90%;
-    height:100%;
+    height:90%;
     margin: auto;
     /* background-color: blue; */
-    padding: .6em .8em;
+    padding: 1.5em .8em;
     display:flex;
     justify-content: space-between;
     
@@ -16,14 +30,15 @@
     background: rgb(203,202,214);
     background: linear-gradient(-180deg, rgba(203,202,214,1) 0%, rgba(239,242,240,1) 53%, rgba(239,242,252,1) 100%);
     width: 17%;
-    max-height: 39%;
+    max-height: 40%;
     border-radius: 10px;
     padding: .8em;
     /* margin: auto; */
-    /* margin-top: .8em; */
+    /* margin-top: 1em; */
     margin-bottom: 0;
     transition: all 0.2s ease;
     cursor: pointer;
+    padding: 2em auto;
     /* overflow: hidden; */
 }
 .library-card:hover {

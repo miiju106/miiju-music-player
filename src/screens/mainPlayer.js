@@ -92,7 +92,7 @@ const MainPlayer = () => {
 
   return (
     <div className="mainPlayer-screen">
-      <Search />
+      {/* <Search /> */}
       {currentMainPlaylist && (
         <MainPlaylist
           mainPlaylist={mainPlaylist}
@@ -106,7 +106,7 @@ const MainPlayer = () => {
 
         <p className="second-head">ALBUM</p>
         <p className="third-head">DATE RELEASE</p>
-        <p>TIME</p>
+        <p className="fourth-head">TIME</p>
       </div>
       <MainPlaylistTrack
         playlistTracks={playlistTracks}

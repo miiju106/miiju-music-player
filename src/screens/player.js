@@ -56,7 +56,7 @@ const Player = () => {
   return (
     <div className="player-screen">
       <div className="player-firstdiv" >
-        <MainPlay cart={cart} setCart={setCart} isPlaying={isPlaying} setIsPlaying={setIsPlaying} tracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex} currentTrack={currentTrack}/>
+        <MainPlay cart={cart} setCart={setCart} isPlaying={isPlaying} setIsPlaying={setIsPlaying} tracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex} currentTrack={currentTrack} setCurrentTrack={setCurrentTrack}/>
         <div className="player-seconddiv">
           <SongAlbum album={currentTrack?.album}/>
           <SongQueue cart={cart} tracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex}/>

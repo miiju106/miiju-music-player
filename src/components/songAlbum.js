@@ -15,7 +15,7 @@ const SongAlbum = ({album}) => {
         alt=""
         className='library-img'
       />
-      <div className='album-title'><p >{`${album?.name}-${artistNames?.join(",")}`}</p></div>
+      <div className='album-title'><h3 >{`${album?.name}-${artistNames?.join(",")}`}</h3></div>
       
       <p className='album-track-title'>{`${album?.name} is an/a ${album?.album_type} by ${artistNames?.join(",")} with ${album?.total_tracks} tracks`}</p>
       <p className='album-date-title'>{`Release date ${album?.release_date}`}</p>

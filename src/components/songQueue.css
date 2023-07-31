@@ -1,3 +1,9 @@
+@media screen and (max-width: 428px) {
+  
+  .track-list-card{
+   margin-top: 0 !important;
+  }
+}
 .track-list-item{
     display:flex;
     justify-content: space-between;
@@ -9,8 +15,7 @@
 .track-list-name{
     font-weight: 600;
     font-size:12px;
-    /* overflow-y: auto; */
-
+    
 }
 .track-list-name:hover {
     transform: scale(0.95);
@@ -22,17 +27,18 @@
     background: rgba(239,242,240,1) 53%;
     /* background: linear-gradient(-180deg, rgba(203,202,214,1) 0%, rgba(239,242,240,1) 53%, rgba(239,242,252,1) 100%); */
     width: 100%;
-    height: 30%;
+    height: 25%;
     border-radius: 10px;
     padding: .9em;
     margin: auto;  
     margin-top: 1em;      
     transition: all 0.2s ease;
     cursor: pointer;    
-    overflow-y: scroll;
+    overflow-y: auto;
     /* height: 100%; */
 }
 .track-list-card > p{
-    margin-bottom: .9em;
+    margin-bottom: .6em;
     font-weight: 600;
+    /* color:black; */
 }

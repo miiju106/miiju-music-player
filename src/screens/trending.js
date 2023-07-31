@@ -48,7 +48,7 @@ const Trending = () => {
             <p className="track-name">{track?.release_date}</p>
           </div>
           <div>
-            <p className="track-name">0:30</p>
+            <p className="track-name track-dur">0:30</p>
           </div>
         </div>
       ))}
