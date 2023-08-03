@@ -1,16 +1,18 @@
 @media screen and (max-width: 1024px) {
     .mainPlayer-screen { 
         margin: 0 !important;
-           
-        /* background-color: blue; */
-    }
+        /* padding-top: 3.5em !important; */
+                   
+        }
    
 
 }
 @media screen and (max-width: 428px) {
     .mainPlayer-screen { 
         margin: 0 !important;
-        width: 100% !important;        
+        width: 100% !important;
+        overflow-y: auto !important;
+        padding-top: 3.2em !important;        
         
     }
     .playlist-head > p{
@@ -25,6 +27,7 @@
     height:100%;
     padding: 1.5em .8em;
     margin: auto;
+    margin-top: .8em;
     overflow-y: auto;
     
     

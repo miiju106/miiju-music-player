@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import LogIn from "./components/logIn";
+import LogOut from "./components/logOut";
 import { setClientToken } from "./components/spotifyApi";
 // import clientApi from "./components/spotifyApi";
 import Sidebar from "./components/sidebar";
@@ -40,6 +41,7 @@ function App() {
     <Router>
       <div className="main-screen">
       <Sidebar />
+      <LogOut spotifyToken={spotifyToken} setSpotifyToken={setSpotifyToken}/>
       <Routes>
         <Route path="/" element={<Library />} />
         <Route path="/feed" element={<Feed />} />

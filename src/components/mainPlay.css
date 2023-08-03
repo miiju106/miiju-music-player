@@ -20,7 +20,11 @@
 .main-play {
   /* flex:3; */
   width: 77%;
+  
   /* background-color: yellow; */
+}
+.playlist-main{
+  overflow-y: auto;
 }
 .text {
   width: 100%;

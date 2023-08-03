@@ -1,0 +1,22 @@
+.logout-icon{
+    position: fixed;
+    top: 8px;
+    right: 33px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+.btn-logOut{
+    background-color: #207698;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: .7em 1em;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-logOut:hover{
+    background-color: rgba(244, 187, 146,1);
+        
+}

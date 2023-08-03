@@ -1,7 +1,7 @@
 @media screen and (max-width: 428px) {
     .library-card {
       width: 45% !important;
-      overflow-y: auto !important;
+      /* overflow-y: auto !important; */
       margin-bottom: .6em !important;
       /* height:70vh !important;  */
     }
@@ -10,6 +10,14 @@
     }
     
   }
+ @media screen and (max-width: 1024px) {
+    .library-card {
+      max-height: 30% !important;
+      /* overflow-y: auto !important;  */       
+    }
+   
+    
+  } 
 
 
 .inner-screen{
@@ -30,7 +38,7 @@
     background: rgb(203,202,214);
     background: linear-gradient(-180deg, rgba(203,202,214,1) 0%, rgba(239,242,240,1) 53%, rgba(239,242,252,1) 100%);
     width: 17%;
-    max-height: 40%;
+    max-height: 47%;
     border-radius: 10px;
     padding: .8em;
     /* margin: auto; */

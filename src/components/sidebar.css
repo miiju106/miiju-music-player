@@ -11,6 +11,7 @@
         position: fixed;
         bottom: 0;
         z-index: 1;
+        max-height: 75px !important;
     }
     .sidebar-subdiv > img{
         display:none;
@@ -25,8 +26,14 @@
         justify-content: space-around;
         width: 100%;
     }
-    .side-bar{
-        font-size:12px !important;
+    .icon-icon, .sidebar, .icon-title{
+        font-size:10px !important;
+        /* background-color: yellow; */
+        
+    }
+    .btn-icon{
+        width:60px !important;
+        height:60px !important;
     }
    
 
@@ -35,6 +42,9 @@
     background-color: #26223E;
     width:100px;
     height:100vh;
+    display: flex;
+    flex-direction: column;
+    
     /* overflow:hidden; */
     /* position:fixed; */
 }
@@ -80,6 +90,8 @@
     transition: all 0.2s ease;
     
 }
+
+
 .btn-icon.active{
     background-color: rgba(244, 187, 146,1);
     color: #fff;

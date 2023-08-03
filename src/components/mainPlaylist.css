@@ -6,7 +6,8 @@
         border-radius: .2em !important;
     }
     .mainPlay-div{
-        height: 20% !important;
+        max-height: 25% !important;
+        margin-top: 0 !important;
     }
    } 
 

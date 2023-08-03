@@ -10,6 +10,7 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 
+
 const Sidebar = () => {
   useEffect(() => {
     clientApi
@@ -21,6 +22,8 @@ const Sidebar = () => {
         console.log(err.message);
       });
   }, []);
+
+ 
 
   return (
     <div className="sidebar-div">
@@ -47,6 +50,9 @@ const Sidebar = () => {
         /> */}
         </div>
       </div>
+      
+    
+
     </div>
   );
 };
