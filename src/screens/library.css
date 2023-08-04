@@ -22,16 +22,7 @@
     }
         
   } 
-  @media screen and (max-width: 1024px) {
-    .library-card {
-      /* max-height: 20% !important; */
-       /* max-width: 20% !important; */
-        
-     
-      /* overflow-y: auto !important;  */       
-    }
-        
-  } 
+ 
 
 
 .inner-screen{
@@ -60,8 +51,7 @@
     margin-bottom: 0;
     transition: all 0.2s ease;
     cursor: pointer;
-    padding: 2em auto;
-    /* overflow: hidden; */
+    
 }
 .library-card:hover {
     transform: scale(1.02);
