@@ -15,6 +15,7 @@
   .player-screen {
     margin: 0 !important;
     width: 100% !important;
+   
     
     /* overflow-y: auto !important; */
     /* height:70vh !important;  */
@@ -22,11 +23,13 @@
   .player-firstdiv {
     flex-direction: column;
     width: 100% !important;
+    overflow-y: auto !important;
     /* background-color:blue; */
   }
   .player-seconddiv {
     width: 100% !important;
     flex-direction: row !important;
+    /* height: 15% !important; */
     /* align-items: center; */
     /* justify-content: space-between !important; */
     /* background-color:blue; */

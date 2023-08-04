@@ -8,7 +8,7 @@ const SongQueue = ({tracks, setCurrentIndex, currentIndex, cart}) => {
   // console.log(currentIndex)
   return (
     <div className='track-list-card'>
-      <p>Favourites</p>
+      <p className='p-tracklist'>Favourites</p>
       {cart.length !== 0 ? (
         <div >
         {cart?.map((track, index)=>(

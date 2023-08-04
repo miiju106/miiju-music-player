@@ -30,6 +30,7 @@ const ProgressBar = ({ isPlaying, currentPercentage,duration, trackProgress, pla
       //  className="slider-cont"
       //  isPlaying={true}
         min={0}
+        
         max={duration}
         value={trackProgress}
         onChange={(e) => setTrackProgress(e.target.value )}
@@ -39,9 +40,12 @@ const ProgressBar = ({ isPlaying, currentPercentage,duration, trackProgress, pla
           '& .MuiSlider-thumb:hover': {
             width: 20,
             height: 20,
+            
         }
         
       }}
+      
+     
           
       />
       </div>

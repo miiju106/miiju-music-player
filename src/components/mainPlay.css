@@ -1,11 +1,19 @@
 @media screen and (max-width: 428px) {
   .main-play {
     width: 100% !important;
-    /* overflow-y: hidden !important; */
+    height: 82% !important;
+    margin-bottom: 1em;
+    /* background-color: blue; */
+    overflow-y: auto !important;
     /* height:70vh !important;  */
   }
-  .track-name {
-    font-size: 10px !important;
+  
+  .track-name, .firstDiv-name {
+    font-size: 8px !important;
+  }
+  
+  .title-subdiv >p{
+    font-size: 8px !important;
   }
   .title-img {
     border-radius: 5px !important;
@@ -15,6 +23,19 @@
   }
   .search-text{
     margin-bottom: .8em !important;
+  }
+  .playlist-main{
+    overflow-y: auto !important;
+  }
+  .head-head, .third-third{
+    display: none !important;
+  }
+  .third-div{
+    width: 10% !important;
+    background-color: blue;
+  }
+  .secondDiv-name,.firstDiv-name{
+    width: 20% !important;
   }
 }
 .main-play {

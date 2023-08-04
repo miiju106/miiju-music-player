@@ -1,10 +1,10 @@
 @media screen and (max-width: 428px) {
   
     .play-pause-icon{
-     font-size: 52px !important;
+     font-size: 42px !important;
     }
     .prev-icon, .next-icon{
-        font-size: 40px !important;
+        font-size: 30px !important;
     }
     .vol-down, .vol-up{
         font-size: 18px !important;
@@ -26,14 +26,17 @@
     .play-control-name{
         width: 20% !important;
     }
-    .control-song-title{
-        font-size: 12px !important;
+    .control-song-title, .arttist{
+        font-size: 9px !important;
     }
     .control-img{
         border-radius: 5px !important;
     }
     .control-artist-title{
-        font-size: 10px !important;
+        font-size: 7px !important;
+    }
+    .control-name-detail{
+        width: 45% !important;
     }
 
   }

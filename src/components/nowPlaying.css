@@ -6,16 +6,23 @@
         
     } 
    
+  
+   
 
 }
 @media screen and (max-width: 428px) {
      .now-play-cont { 
         position: fixed;
-        bottom: 7em;
+        bottom: 4.9em;
         width: 95% !important;
         z-index: 1;
-        
+        /* height: 40% !important; */
+                
     } 
+    .play-duration >p {
+        font-size: 12px !important;
+    }
+   
    
 
 }

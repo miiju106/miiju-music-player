@@ -106,12 +106,12 @@ const MainPlay = ({
       <Search wordFiltered={wordFiltered} setWordFiltered={setWordFiltered} searchTracks={tracks} setCurrentIndex={setCurrentIndex} currentIndex={currentIndex} currentTrack={currentTrack} setCurrentTrack={setCurrentTrack}/>
       {wordFiltered.length == 0 && (
         <div className="playlist-main">
-        <div className="playlist-head">
+        <div className="playlist-head head-head">
           <p className="first-head">TITLE</p>
 
           <p className="second-head">ALBUM</p>
           <p className="third-head">DATE RELEASE</p>
-          <p>TIME</p>
+          <p className="fourth-head">TIME</p>
         </div>
 
         {tracks?.map((track, index) => (
@@ -151,7 +151,7 @@ const MainPlay = ({
             <div className="secondDiv-name">
               <p className="track-name">{track.track.album?.release_date}</p>
             </div>
-            <div className=" third-div">
+            <div className=" third-div third-third">
               <p className="track-name">0:30</p>
             </div>
           </div>
