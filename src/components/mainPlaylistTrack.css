@@ -1,3 +1,11 @@
+@media screen and (max-width: 428px) {
+    
+    
+    .title-subdiv{
+        width:80% !important;
+    }
+}
+
 .playlist-head{
     display: flex;
     justify-content: space-between;

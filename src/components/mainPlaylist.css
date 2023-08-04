@@ -6,9 +6,10 @@
         border-radius: .2em !important;
     }
     .mainPlay-div{
-        max-height: 25% !important;
+        height: 25% !important;
         margin-top: 0 !important;
     }
+    
    } 
 
 .mainPlay-img{

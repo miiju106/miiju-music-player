@@ -1,4 +1,7 @@
 @media screen and (max-width: 428px) {
+    .play-control-cont{
+        margin-top: .2em !important;
+    }
   
     .play-pause-icon{
      font-size: 42px !important;
@@ -20,8 +23,10 @@
         /* background-color: #0B163D; */
     }
     .control-name-detail{
-        width: 100% !important;
-        /* background-color: #0B163D; */
+        overflow-y: hidden !important;
+        white-space: nowrap;
+        min-width: 100% !important;
+        background-color: white;
     }
     .play-control-name{
         width: 20% !important;
@@ -30,7 +35,9 @@
         font-size: 9px !important;
     }
     .control-img{
-        border-radius: 5px !important;
+        border-radius: 4px !important;
+        max-width: 25% !important;
+        margin-right: .2em !important;
     }
     .control-artist-title{
         font-size: 7px !important;

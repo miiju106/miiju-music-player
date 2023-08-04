@@ -1,12 +1,18 @@
 @media screen and (max-width: 428px) {
   .main-play {
     width: 100% !important;
-    height: 82% !important;
+    height: 100% !important;
     margin-bottom: 1em;
     /* background-color: blue; */
     overflow-y: auto !important;
     /* height:70vh !important;  */
   }
+  .song-title {
+    flex: 0.7 !important;
+}
+.playlist-list {
+  padding: .4em 0 !important;
+}
   
   .track-name, .firstDiv-name {
     font-size: 8px !important;
@@ -34,8 +40,11 @@
     width: 10% !important;
     background-color: blue;
   }
-  .secondDiv-name,.firstDiv-name{
-    width: 20% !important;
+  .secondDiv-name{
+    width: 15% !important;
+  }
+  .firstDiv-name{
+    width: 25% !important;
   }
 }
 .main-play {

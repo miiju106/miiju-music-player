@@ -115,10 +115,10 @@ const MainPlay = ({
         </div>
 
         {tracks?.map((track, index) => (
-          <div className="playlist-body">
+          <div className="playlist-body playlist-list">
            
 
-            <div className="title-div" onClick={() => setCurrentIndex(index)}>
+            <div className="title-div song-title" onClick={() => setCurrentIndex(index)}>
               <div className="div-img">
                 <img
                   src={track.track.album?.images[0]?.url}

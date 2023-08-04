@@ -9,19 +9,32 @@
     .inner-screen{
         width: 95% !important;
     }
+    .library-img{
+      border-radius: 8px !important;
+    } 
     
   }
  
  @media screen and (max-width: 900px) {
     .library-card {
       max-height:60% !important;
-       width: 30% !important;  
+       max-width: 30% !important;  
        margin-bottom: .6em !important;
      
-      /* overflow-y: auto !important;  */       
+   
     }
         
   } 
+ /* @media screen and (max-width: 1024px) {
+    .library-card {
+      max-height:60% !important;
+       width: 60% !important;  
+       margin-bottom: .6em !important;
+     
+   
+    }
+        
+  }  */
  
 
 
@@ -33,6 +46,7 @@
     padding: 1.5em .8em;
     display:flex;
     justify-content: space-between;
+    overflow-y: auto;
     
     /* align-items: center; */
     flex-wrap: wrap;

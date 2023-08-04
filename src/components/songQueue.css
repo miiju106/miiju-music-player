@@ -1,8 +1,9 @@
 @media screen and (max-width: 428px) {
   
   .track-list-card{
+    display: none;
    /* margin-top: 0 !important; */
-   height: 50% !important;
+   /* height: 50% !important; */
   }
   .p-tracklist{
     font-size: 14px !important;
