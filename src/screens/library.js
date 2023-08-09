@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import "./library.css";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import { useNavigate } from "react-router-dom";
-import Search from "../components/search";
+
 
 const Library = () => {
   const [playlist, setPlaylist] = useState(null);
-  const [allTracks, setAllTracks] = useState(null)
+  // const [allTracks, setAllTracks] = useState(null)
   // const [orderedPlaylist, setOrderedPlaylist] = useState(null);
 
   // This is the logic to arrange the playlists alphabetically;
@@ -25,16 +25,7 @@ const Library = () => {
     return 0;
   });
 
-  // const theIds = [] 
-  //  playlist?.forEach((playlists, index)=>{
-  //   // console.log(playlists.id)
-  //    theIds?.push(playlists.id)
-    
-  //   })
-    
-    
-  //   const playlistId = theIds.join(',')
-  //   console.log(playlistId)
+  
 
 
   useEffect(() => {

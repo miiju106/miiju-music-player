@@ -1,6 +1,6 @@
 import React from 'react'
 import "./logOut.css";
-import LogoutIcon from '@mui/icons-material/Logout';
+// import LogoutIcon from '@mui/icons-material/Logout';
 
 const LogOut = ({spotifyToken,setSpotifyToken}) => {
 

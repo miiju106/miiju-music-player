@@ -1,13 +1,13 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 // import { setClientToken } from ".spotifyApi";
 import clientApi from "./spotifyApi";
 import "./sidebar.css";
 import SideBarButton from "./sideBarButton";
-import DashboardIcon from "@mui/icons-material/Dashboard";
+// import DashboardIcon from "@mui/icons-material/Dashboard";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 
 

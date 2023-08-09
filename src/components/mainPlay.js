@@ -1,10 +1,10 @@
 import React from "react";
 import "./mainPlay.css";
-import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+// import { useLocation } from "react-router-dom";
+import {useState} from "react";
 import Search from "./search";
-import MainSongQueue from "./mainSongQueue";
-import clientApi from "./spotifyApi";
+// import MainSongQueue from "./mainSongQueue";
+// import clientApi from "./spotifyApi";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";

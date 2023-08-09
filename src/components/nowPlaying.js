@@ -9,9 +9,8 @@ const NowPlaying = ({
   currentIndex,
   setCurrentIndex,
   isPlaying,
-  setIsPlaying
+  setIsPlaying,
 }) => {
-  
   const [trackProgress, setTrackProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
   const [playback, setPlayback] = useState(0);
@@ -19,7 +18,7 @@ const NowPlaying = ({
 
   var audioTracks = tracks[currentIndex]?.track.preview_url;
 
-  const audioRef = useRef(new Audio(tracks[0]?.track.preview_url))
+  const audioRef = useRef(new Audio(tracks[0]?.track.preview_url));
   const intervalRef = useRef();
 
   const isReady = useRef(false);
@@ -103,8 +102,6 @@ const NowPlaying = ({
     audioRef.current = new Audio(audioTracks);
 
     setTrackProgress(audioRef.current.currentTime);
-    
-    
 
     if (isReady.current) {
       audioRef.current.play();
@@ -125,39 +122,26 @@ const NowPlaying = ({
 
   useEffect(() => {
     setElapsed(formatTime(duration));
-    
   }, [trackProgress]);
-  
-   useEffect(() => {
-
-  //   // currentPercentage = playback 
-     if(audioRef.current){
-     audioRef.current.currentTime = trackProgress;      
-     setTrackProgress(audioRef.current.currentTime);
-          
-     }
-       
-    
-  //   setPlayback(currentPercentage)
-  //   setTrackProgress(currentPercentage)
-  //   // audioRef.current.currentTime = playback;
-    
-    
-    
-   }, [currentPercentage ]);
 
   useEffect(() => {
-    
-    if(audioRef.current){
-      // startTimer()
-      audioRef.current.volume = volume ;
-     setVolume(audioRef.current.volume);
-     
+    //   // currentPercentage = playback
+    if (audioRef.current) {
+      audioRef.current.currentTime = trackProgress;
+      setTrackProgress(audioRef.current.currentTime);
     }
-    
-    
-    
-    
+
+    //   setPlayback(currentPercentage)
+    //   setTrackProgress(currentPercentage)
+    //   // audioRef.current.currentTime = playback;
+  }, [currentPercentage]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      // startTimer()
+      audioRef.current.volume = volume;
+      setVolume(audioRef.current.volume);
+    }
   }, [volume]);
 
   // const onScrub = (value) =>{
@@ -188,9 +172,7 @@ const NowPlaying = ({
         setTrackProgress={setTrackProgress}
         setPlayback={setPlayback}
         playback={playback}
-        duration = {duration}      
-                
-        
+        duration={duration}
       />
       <div className="play-duration">
         <p>00:{addZero(Math.round(trackProgress))}</p>

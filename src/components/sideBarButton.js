@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "./sidebar";
 import { Link, useLocation } from "react-router-dom";
 import "./sidebar.css";
 

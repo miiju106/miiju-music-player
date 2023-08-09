@@ -3,7 +3,6 @@ import "./mainPlaylistTrack.css";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import { useNavigate } from "react-router-dom";
 
-
 const MainPlaylistTrack = ({
   playlistTracks,
   mainPlaylist,
@@ -17,8 +16,6 @@ const MainPlaylistTrack = ({
 
   return (
     <div className="playlist-main">
-      
-
       {playlistTracks?.map((track, index) => (
         <div
           className="playlist-body"
@@ -46,9 +43,8 @@ const MainPlaylistTrack = ({
           </div>
           <div className="firstDiv-name">
             <p className="track-name">{track.track.album?.name}</p>
-            
           </div>
-          <div  className="secondDiv-name">
+          <div className="secondDiv-name">
             <p className="track-name">{track.track.album?.release_date}</p>
           </div>
           <div className="thirdDiv-name">

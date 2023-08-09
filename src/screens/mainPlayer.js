@@ -1,10 +1,8 @@
 import React from "react";
 import clientApi from "../components/spotifyApi";
 import { useState, useEffect } from "react";
-import Search from "../components/search";
 import "./library.css";
 import "./mainPlayer.css";
-import { useNavigate } from "react-router-dom";
 import MainPlaylist from "../components/mainPlaylist";
 import MainPlaylistTrack from "../components/mainPlaylistTrack";
 
@@ -92,7 +90,7 @@ const MainPlayer = () => {
 
   return (
     <div className="mainPlayer-screen">
-      {/* <Search /> */}
+      
       {currentMainPlaylist && (
         <MainPlaylist
           mainPlaylist={mainPlaylist}
