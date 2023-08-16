@@ -69,7 +69,7 @@ const MainPlay = ({
       }
       return cartArray;
     };
-    console.log(checkItemIndex(cart, item));
+    // console.log(checkItemIndex(cart, item));
 
     if (checkItemIndex(cart, item) != undefined) {
       const newCart = cart?.filter(
@@ -82,7 +82,7 @@ const MainPlay = ({
     }
   };
 
-  console.log(cart);
+  // console.log(cart);
   // console.log(cart.length);
   // console.log(state);
   // console.log(clickfavourite)

@@ -22,7 +22,7 @@ function App() {
     window.location.hash = "";
     if (!_token && hash) {
       const accessToken = hash.split("&")[0].split("=")[1];
-      console.log(accessToken);
+      // console.log(accessToken);
       window.localStorage.setItem("token", accessToken);
       // console.log(hash)
       setSpotifyToken(accessToken);
@@ -33,7 +33,7 @@ function App() {
     }
   }, []);
 
-  console.log(spotifyToken);
+  // console.log(spotifyToken);
 
   return !spotifyToken ? (
     <LogIn />

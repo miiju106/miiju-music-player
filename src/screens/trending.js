@@ -11,11 +11,11 @@ const Trending = () => {
     clientApi
       .get("browse/new-releases")
       .then((resp) => {
-        console.log(resp.data.albums.items.slice(0, 10));
+        // console.log(resp.data.albums.items.slice(0, 10));
         setNewRelease(resp.data.albums.items.slice(0, 10));
       })
       .catch((err) => {
-        console.log(err.message);
+        // console.log(err.message);
       });
   }, []);
 
@@ -27,7 +27,7 @@ const Trending = () => {
 
       {newRelease?.map((track, index) => (
         <div className="trending-body" key={track.id}>
-          {console.log(track)}
+          
 
           <div className="title-div">
             <div className="div-img">

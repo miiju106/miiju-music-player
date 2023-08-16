@@ -5,7 +5,7 @@ import Slider from '@mui/material/Slider'
 
 const VolumeBar = ({ volume, setVolume }) => {
 
-  console.log(volume)
+  // console.log(volume)
   return (
     <div className="vol-bar">
       {/* <Line

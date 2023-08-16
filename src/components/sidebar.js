@@ -16,10 +16,10 @@ const Sidebar = () => {
     clientApi
       .get("me")
       .then((resp) => {
-        console.log(resp);
+        // console.log(resp);
       })
       .catch((err) => {
-        console.log(err.message);
+        // console.log(err.message);
       });
   }, []);
 

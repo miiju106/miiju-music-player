@@ -27,7 +27,7 @@ const Search = ({
 
   const handleSearch = (e) => {
     const searchWord = e.target.value;
-    console.log(searchWord);
+    // console.log(searchWord);
     setWordSearch(searchWord);
     const filteredWord = searchTracks?.filter((list) =>
       list.track.name.toLowerCase().includes(wordSearch.toLowerCase())

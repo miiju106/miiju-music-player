@@ -32,20 +32,20 @@ const Library = () => {
     clientApi
       .get("me/playlists")
       .then((resp) => {
-        console.log(resp);
+        // console.log(resp);
         setPlaylist(resp.data.items);
         // setOrderedPlaylist(sortPlayLists);
       })
       .catch((err) => {
         alert("Token has expired! Kindly logOut and re-login OR Make sure you have a strong network")
-        console.log(err.message);
+        // console.log(err.message);
       });
   }, []);
 
   
 
 
-  console.log(playlist);
+  // console.log(playlist);
    
   // console.log(playlist.id);
   // console.log(sortPlayLists)

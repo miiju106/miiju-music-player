@@ -43,19 +43,19 @@ const MainPlayer = () => {
   //     });
   // }, []);
 
-  console.log(mainPlaylist);
-  console.log(currentMainPlaylist);
+  // console.log(mainPlaylist);
+  // console.log(currentMainPlaylist);
 
   useEffect(() => {
     clientApi
       .get("me/playlists")
       .then((resp) => {
-        console.log(resp);
+        // console.log(resp);
         setMainPlaylist(resp.data.items);
         setCurrentMainPlaylist(resp.data.items[playlistIndex]);
       })
       .catch((err) => {
-        console.log(err.message);
+        // console.log(err.message);
       });
   }, [playlistIndex]);
 
@@ -70,16 +70,16 @@ const MainPlayer = () => {
       .get(`playlists/${currentMainPlaylist.id}/tracks`)
       .then((resp) => {
         // console.log(resp)
-        console.log(resp.data.items);
+        // console.log(resp.data.items);
         setPlaylistTracks(resp.data.items);
       })
       .catch((err) => {
-        console.log(err.message);
+        // console.log(err.message);
       });
   }, [currentMainPlaylist]);
 
-  console.log(currentMainPlaylist.id);
-  console.log(playlistTracks);
+  // console.log(currentMainPlaylist.id);
+  // console.log(playlistTracks);
 
   
 

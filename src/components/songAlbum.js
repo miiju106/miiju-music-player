@@ -7,7 +7,7 @@ const SongAlbum = ({album}) => {
   album?.artists?.forEach((element)=>{
     artistNames?.push(element.name)
   })
-  console.log(artistNames)
+  // console.log(artistNames)
   return (
     <div className='album-card'>
       <img

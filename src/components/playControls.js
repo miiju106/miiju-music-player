@@ -23,8 +23,8 @@ const PlayControls = ({
     currentArtist?.push(element.name);
   });
 
-  console.log(currentTrack);
-  console.log(currentArtist);
+  // console.log(currentTrack);
+  // console.log(currentArtist);
 
   return (
     <div className="play-control-cont">

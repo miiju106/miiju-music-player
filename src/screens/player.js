@@ -37,7 +37,7 @@ const Player = () => {
         setCurrentTrack(resp.data.items[0].track)
        })
       .catch((err) => {
-        console.log(err.message);
+        // console.log(err.message);
       });
     }
     

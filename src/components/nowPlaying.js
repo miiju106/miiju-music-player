@@ -156,7 +156,7 @@ const NowPlaying = ({
   // console.log(elapsed);
 
   // console.log(duration);
-  console.log(audioRef);
+  // console.log(audioRef);
   // console.log(audioRef.current);
   // console.log(audioRef.current.currentTime);
   // console.log(audioRef.current.startTime);

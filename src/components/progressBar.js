@@ -5,7 +5,7 @@ import "./nowPlaying.css";
 
 const ProgressBar = ({ isPlaying, currentPercentage,duration, trackProgress, playback, setPlayback, setTrackProgress }) => {
 
-  console.log(playback)
+  // console.log(playback)
   return (
     <div>
       <div className="bar-cont">
