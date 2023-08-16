@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/miiju-music-player/static/css/main.d6b0a085.css",
-    "main.js": "/miiju-music-player/static/js/main.6ca20d8a.js",
+    "main.css": "/miiju-music-player/static/css/main.d5999794.css",
+    "main.js": "/miiju-music-player/static/js/main.73020602.js",
     "static/js/787.e283f29f.chunk.js": "/miiju-music-player/static/js/787.e283f29f.chunk.js",
     "index.html": "/miiju-music-player/index.html",
-    "main.d6b0a085.css.map": "/miiju-music-player/static/css/main.d6b0a085.css.map",
-    "main.6ca20d8a.js.map": "/miiju-music-player/static/js/main.6ca20d8a.js.map",
+    "main.d5999794.css.map": "/miiju-music-player/static/css/main.d5999794.css.map",
+    "main.73020602.js.map": "/miiju-music-player/static/js/main.73020602.js.map",
     "787.e283f29f.chunk.js.map": "/miiju-music-player/static/js/787.e283f29f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6b0a085.css",
-    "static/js/main.6ca20d8a.js"
+    "static/css/main.d5999794.css",
+    "static/js/main.73020602.js"
   ]
 }
