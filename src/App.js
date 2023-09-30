@@ -43,7 +43,7 @@ function App() {
       <Sidebar />
       <LogOut spotifyToken={spotifyToken} setSpotifyToken={setSpotifyToken}/>
       <Routes>
-        <Route path="/" element={<Library />} />
+        <Route exact path="/" element={<Library />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/trending" element={<Trending />} />
         <Route path="/player" element={<MainPlayer />} />
