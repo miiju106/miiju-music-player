@@ -1,4 +1,3 @@
-import React from "react";
 import clientApi from "../components/spotifyApi";
 import { useState, useEffect } from "react";
 import "./library.css";
@@ -60,20 +59,26 @@ const Library = () => {
     <div className="inner-screen">
       {/* <Search/> */}
       
+      
       {playlist?.map((playlists) => (
         <div
           className="library-card"
           key={playlists.id}
           onClick={() => playPlaylist(playlists.id, playlists.name)}
         >
-          <img src={playlists.images[0].url} alt="" className="library-img" />
+      
+      
+          {/* <img src={playlists?.images.length !==0 && playlists?.images[0].url} alt="musicmedia" className="library-img" /> */}
+          {playlists?.images.length !==0 && <img src={playlists?.images[0].url} alt="musicmedia" className="library-img" />}
           <p className="library-name">{playlists.name}</p>
           <p className="song-total">{playlists.tracks.total} Songs</p>
           <div className="library-play">
             <PlayCircleIcon style={{ fontSize: "35px" }} />
           </div>
+          {/* currentMainPlaylist?.images && currentMainPlaylist?.images[0].url */}
         </div>
       ))}
+      
     </div>
   );
 };
