@@ -1,6 +1,18 @@
+@media screen and (max-width: 320px) {
+  
+  .inner-screen{    
+    gap: 1.2em !important; 
+    
+  } 
+
+}
+
+
+
+
 @media screen and (max-width: 428px) {
     .library-card {
-      min-width: 45% !important;
+      min-width: 45% !important;    
       /* max-height: 70% !important; */
       /* overflow-y: auto !important; */
       margin-bottom: .6em !important;
@@ -9,7 +21,8 @@
       
     }
     .inner-screen{
-        width: 95% !important;
+        width: 100% !important;
+        margin: auto !important;
         
     }
     .library-img{

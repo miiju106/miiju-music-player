@@ -1,6 +1,6 @@
-import React from "react";
+
 import {useState, useEffect} from "react"
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 import "./player.css";
 import SongAlbum from "../components/songAlbum";
 import SongQueue from "../components/songQueue";
@@ -15,9 +15,9 @@ const Player = () => {
   const mySong = location.state.song;
   // console.log(location.state.song);
 
-  const params = useParams();
+  
 
-  // console.log(params)
+ 
 
 
   const [tracks, setTracks] = useState([]);
